@@ -1,66 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/1458413f3a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style type="text/tailwindcss">
-    @theme {
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
       --color-pronab: #000;
     }
     .poppin{  font-family: "Poppins", sans-serif;
+    .active{background: #000;
+    color: #fff;}
 }
   </style>
 </head>
-<body class="poppin ">
-    <div class="navbar bg-base-100 shadow-sm">
-        <div class="navbar-start">
-         
-          <a class="btn flex justify-start btn-ghost  text-xl "><img class="md:w-full w-[60%]" src="images/logo2.png" alt=""></a>
-        </div>
-        <div class="navbar-center ">
-         <div class="hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a class="active bg-black text-white">Home</a></li>
-         
-                <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
-                <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
-                <li><a>Blog<i class="fa-solid fa-greater-than"></i></a></li>
-                <li><a>Contact Us<i class="fa-solid fa-greater-than"></i></a></li>
-              </ul>
-         </div>
-         <div class="lg:hidden flex">
-            <div class="drawer">
-                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content">
-                  <!-- Page content here -->
-                  <label for="my-drawer" class="drawer-button"><i class="fa-solid fa-bars me-10 lg:me-0"></i></label>
-                </div>
-                <div class="drawer-side">
-                  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                  <ul class="menu bg-base-200 text-base-content min-h-full w-[80%] p-4 space-y-3">
-                    <li><a class="active bg-black text-white">Home</a></li>
-         
-                    <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
-                    <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
-                    <li><a>Blog<i class="fa-solid fa-greater-than"></i></a></li>
-                    <li><a>Contact Us<i class="fa-solid fa-greater-than"></i></a></li>
-                  </ul>
-                </div>
-              </div>
 
-          </div>
+<body class="poppin ">
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+
+                <a class=" flex justify-start btn-ghost  text-xl "><img class="md:w-full w-[60%]" src="images/logo2.png"
+                        alt=""></a>
+            </div>
+            <div class="navbar-center ">
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="active bg-black text-white">Home</a></li>
+
+                        <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
+                        <li><a>Blog<i class="fa-solid fa-greater-than"></i></a></li>
+                        <li><a>Contact Us<i class="fa-solid fa-greater-than"></i></a></li>
+                    </ul>
+                </div>
+                <div class="lg:hidden flex">
+                    <div class="drawer">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            <!-- Page content here -->
+                            <label for="my-drawer" class="drawer-button"><i
+                                    class="fa-solid fa-bars me-10 lg:me-0"></i></label>
+                        </div>
+                        <div class="drawer-side">
+                            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                            <ul class="menu bg-base-200 text-base-content min-h-full w-[80%] p-4 space-y-3">
+                                <li><a class="active">Home</a></li>
+
+                                <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
+                                <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
+                                <li><a>Blog<i class="fa-solid fa-greater-than"></i></a></li>
+                                <li><a>Contact Us<i class="fa-solid fa-greater-than"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+            </div>
         </div>
-   
-        <div class="navbar-end">
-          <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
-        </div>
-      </div>
+    </header>
+
+
+    <main class="container mx-auto my-8">
+        <section
+            class=" text-white text-center bg-[url('images/banner.png')] flex flex-col justify-center items-center  py-16 px-10 bg-no-repeat bg-cover bg-center my-8 rounded-lg">
+            <h1 class="font-bold text-4xl">We Provide Effective <br>Legal Solutions</h1>
+            <p class="my-8">There are many variations of passages of Lorem Ipsum available,<br> but the majority have
+                suffered alteration in some form, by injected humour.</p>
+            <form class="fieldset  border-base-300 rounded-box md:w-1/2 w-full p-4">
+
+                <div class="join space-x-2">
+                    <input type="search" class="w-full rounded-md px-4 bg-white placeholder-gray-900"
+                        placeholder="Search your services" />
+                    <button type="submit"
+                        class="btn join-item rounded-md bg-[#B68C5A] border-[#B68C5A] text-white ">Search</button>
+                </div>
+            </form>
+        </section>
+        <section class="my-8">
+
+            <h3 class="text-center font-bold text-2xl">The Legal Practice Area</h3>
+            <p class="text-center my-4">There are many variations of passages of Lorem Ipsum available,<br> but the
+                majority have suffered alteration in some form, by injected humour.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+<div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/child.png" class=" mx-auto" alt="">
+<h5 class="font-bold my-5">Business Law</h5>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+<a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+</div>
+<div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/child.png" class=" mx-auto" alt="">
+    <h5 class="font-bold my-5">Business Law</h5>
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+    </div><div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/child.png" class=" mx-auto" alt="">
+        <h5 class="font-bold my-5">Business Law</h5>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+        </div><div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/child.png" class=" mx-auto" alt="">
+            <h5 class="font-bold my-5">Business Law</h5>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+            </div><div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/child.png" class=" mx-auto" alt="">
+                <h5 class="font-bold my-5">Business Law</h5>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+                </div><div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/child.png" class=" mx-auto" alt="">
+                    <h5 class="font-bold my-5">Business Law</h5>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+                    </div>
+
+                                                            
+                </div>
+        </section>
+
+        <section class="my-8 ">
+            <h3 class="text-center font-bold text-2xl">What Our Client Say</h3>
+            <p class="text-center my-4">There are many variations of passages of Lorem Ipsum available,<br> but the
+                majority have suffered alteration in some form, by injected humour.</p>
+
+                <div class="carousel w-full   rounded-md">
+                    <div id="slide1" class=" relative carousel-item w-full "> 
+                        <div class="w-full h-full absolute top-0 left-0    bg-black opacity-70">
+                            
+                        </div>
+                       <div class="w-full h-full flex justify-center flex-col items-center absolute top-0 left-0 text-center py-3">
+                        <div class="avatar mx-auto">
+                            <div class="w-24 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                             
+                            </div>
+                          </div>
+                          <h4 class="text-white mt-3 font-bold">Awlad Hossain</h4>
+                          <p  class="text-white mt-3">UIX Designer</p>
+                          <p  class="text-white mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                       </div>
+                        <img
+                            src="images/slider-1.jpg"
+                            class="w-full" />
+                            
+                          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                          
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                       
+                          </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <div class="w-full h-full absolute top-0 left-0    bg-black opacity-70">
+                            
+                        </div>
+                       <div class="w-full h-full flex justify-center flex-col items-center absolute top-0 left-0 text-center py-3">
+                        <div class="avatar mx-auto">
+                            <div class="w-24 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                             
+                            </div>
+                          </div>
+                          <h4 class="text-white mt-3 font-bold">Awlad Hossain</h4>
+                          <p  class="text-white mt-3">UIX Designer</p>
+                          <p  class="text-white mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                       </div>
+                      <img
+                        src="images/slider-2.jpg"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <div class="w-full h-full absolute top-0 left-0    bg-black opacity-70">
+                            
+                        </div>
+                       <div class="w-full h-full flex justify-center flex-col items-center absolute top-0 left-0 text-center py-3">
+                        <div class="avatar mx-auto">
+                            <div class="w-24 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                             
+                            </div>
+                          </div>
+                          <h4 class="text-white mt-3 font-bold">Awlad Hossain</h4>
+                          <p  class="text-white mt-3">UIX Designer</p>
+                          <p  class="text-white mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                       </div>
+                      <img
+                        src="images/slider-3.jpg"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <div class="w-full h-full absolute top-0 left-0    bg-black opacity-70">
+                            
+                        </div>
+                       <div class="w-full h-full flex justify-center flex-col items-center absolute top-0 left-0 text-center py-3">
+                        <div class="avatar mx-auto">
+                            <div class="w-24 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                             
+                            </div>
+                          </div>
+                          <h4 class="text-white mt-3 font-bold">Awlad Hossain</h4>
+                          <p  class="text-white mt-3">UIX Designer</p>
+                          <p  class="text-white mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                       </div>
+                      <img
+                        src="images/slider-1.jpg"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+        </section>
+
+
+        <section class="my-8">
+            <h3 class="text-center font-bold text-2xl">What Our Client Say</h3>
+            <p class="text-center my-4">There are many variations of passages of Lorem Ipsum available,<br> but the
+                majority have suffered alteration in some form, by injected humour.</p>
+<div class="grid grid-cols-1 md:grid-cols-2">  <div>
+
+
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title font-semibold">How do I create an account?</div>
+                        <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+                        <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                      </div> <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                      </div> <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                      </div> <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                      </div></div>
+              <div><img src="images/faq.png" alt=""></div>
+                </div>
+        </section>
+       
+        
+        <section class="my-8">  <h3 class="text-center font-bold text-2xl">What Our Client Say</h3>
+            <p class="text-center my-4">There are many variations of passages of Lorem Ipsum available,<br> but the
+                majority have suffered alteration in some form, by injected humour.</p></section>
+            <div class="grid grid-cols-1 md:grid-cols-2  ">
+                <div class="grid grid-cols-1 md:grid-cols-2  ">
+                 
+                 <div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/address.png" class=" mx-auto" alt="">
+                                <h5 class="font-bold my-5">Adress</h5>
+                                <p>A108 Adam Street,<br>New York, NY 535022
+                                </p>
+                                <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+                                </div>
+                 <div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/address.png" class=" mx-auto" alt="">
+                                <h5 class="font-bold my-5">Adress</h5>
+                                <p>A108 Adam Street,<br>New York, NY 535022
+                                </p>
+                                <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+                                </div>
+                 <div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/address.png" class=" mx-auto" alt="">
+                                <h5 class="font-bold my-5">Adress</h5>
+                                <p>A108 Adam Street,<br>New York, NY 535022
+                                </p>
+                                <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+                                </div>
+                 <div class="border px-16 py-8 hover:bg-gray-100 border-gray-300 flex flex-col justify-center content-center text-center"> <img src="images/address.png" class=" mx-auto" alt="">
+                                <h5 class="font-bold my-5">Adress</h5>
+                                <p>A108 Adam Street,<br>New York, NY 535022
+                                </p>
+                                <a href=""><i class="fa-solid fa-circle-right text-orange-500"></i></a>
+                                </div>
+                    
+                                                                                
+                                    </div>
+                                    <div>
+                                        <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
+                                            <legend class="fieldset-legend">Login</legend>
+                                          
+                                            <label class="label">Email</label>
+                                            <input type="email" class="input w-full" placeholder="Email" />
+                                          
+                                            <label class="label">Password</label>
+                                            <input type="password" class="input w-full" placeholder="Password" />
+                                          <textarea name="" cols="20" rows="10" id=""></textarea>
+                                            <button class="btn bg-[#ce5f2c] mt-4">Login</button>
+                                          </fieldset>
+                                    </div>
+            </div>
+    </main>
+    <footer class=" bg-neutral ">
+   <div class="container mx-auto footer  sm:footer-horizontal text-neutral-content p-10">
+    <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+   </div>
+      </footer>
 </body>
+
 </html>
